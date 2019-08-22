@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+
+	<h1>Search A Movie <i class="fas fa-film"></i></h1>
+	<hr>
+	<div class='content'>
+		<h2>
+			<%= movieName %>
+		</h2>
+		<span id='release'><strong>Released: </strong><%=movieRelease%></span><span id='score'><i class="fas fa-star"></i>  <%= movieScore %></span>
+		<div id='plot'><%= moviePlot%></div>
+
+		<ul>
+			<li><strong>Director:</strong> <%= movieDirector %></li>
+			<li><strong>Writer:  </strong><%= movieWriter %></li>
+			<li><strong>Starring:</strong> <%= movieActors %></li>
+		</ul>
+	
+	<a href='/'><button id='backToMainPage'>
+		Click to search another movie...
+	</button></a>
+	</div>
+
+<% include partials/footer.ejs %>

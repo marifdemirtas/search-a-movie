@@ -1,0 +1,11 @@
+<% include partials/header.ejs %>
+
+	<h1>Search A Movie <i class="fas fa-film"></i></h1>
+	<h3>Search any movie you want.</h3>
+	<hr>
+	<form action='/search' method='GET'>
+		<input type='text' name='movieName' placeholder='Search by name...'>
+		<button type='submit'>Search!</button>
+	</form>
+
+<% include partials/footer.ejs %>
